@@ -15,10 +15,9 @@ _logger = logging.getLogger(__name__)
 
 def fetch_image_from_url(url):
     """
-    Gets an image from a URL and converts it to an Odoo friendly format
-    so that we can store it in a Binary field.
+    Gets an image from a URL and converts it to an PIL base-64 encoded image usable in an Odoo Binary field.
     :param url: The URL to fetch.
-    :return: Returns a base64 encoded string.
+    :return: A base64 encoded string.
     """
     data = ''
 
